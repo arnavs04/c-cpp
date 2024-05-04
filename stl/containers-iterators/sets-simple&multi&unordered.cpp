@@ -12,8 +12,8 @@ int main()
     
     int element;
     s.insert(element);
-    auto it = s.find(element);
-    auto it = s.fine(/*non existing*/ element); // gives s.end() no matter what
+    auto it = s.find(element); // iterator points to address of the element
+    auto it = s.find(/*non existing*/ element); // gives s.end() no matter what
     s.erase(element); // erases 5 and takes log time complexity
 
     s.count(element); // gives 1 or 0
@@ -22,6 +22,8 @@ int main()
     auto it2 = s.find(element1);
     auto it4 = s.fine(element2);
     s.erase(it2, it4); //erases elements element1 to the one right before element2
+
+    // lower_bound & upper_bound
 
 
 
@@ -41,6 +43,7 @@ int main()
 
     unordered_set<int> us;
     us.lower_bound();
-    us.upper_bound();
-    // Rest functions are same
+    us.upper_bound(); 
+    // Rest functions are same but with O(1) except lowerbound and upperbound which dont work
+    // better time complexity overall
 }

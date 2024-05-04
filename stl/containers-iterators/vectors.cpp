@@ -23,6 +23,7 @@ int main()
 
     // So *(it) gives values
 
+    v.at(0); // gives element at 0, same as v[0]
     v.back(); //Gives last element
 
     // Instead of writing vector<int>::iterator you can use auto
@@ -40,7 +41,7 @@ int main()
     vector<int> copy(2, 50);
 
     v.erase(v.begin()+1);
-    v.erase(v.begin()+1, v.begin()+3); // removing 2nd and 3rd elements
+    v.erase(v.begin()+1, v.begin()+3); // removing 2nd and 3rd elements, not 4th which as at [3]
 
     v.insert(v.begin() + 1, 300); // inserting 300 at element 2 so nothing is replaced
     v.insert(v.begin(), 2, 400); // at position1 2 times (not index 1)(rather index 0)
@@ -59,4 +60,6 @@ int main()
 
 
     return 0;
+
+    // uses linked list
 }
