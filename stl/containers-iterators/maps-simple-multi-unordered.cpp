@@ -9,7 +9,7 @@ int main()
     // like dictionary from python
     // unique keys like a function
     map<int, int>  mp;
-    mp.insert({1,2});
+    mp.insert({1,2}); // all map functions take O(logn)
     mp[1] = 2;
 
     auto it = mp.begin(); // organised within
@@ -30,4 +30,5 @@ int main()
 
     // Unordered map
     // same difference as set and unordered set
+    // better time complexity as storing and fetching at best and avg is O(1), worst still O(n)
 }

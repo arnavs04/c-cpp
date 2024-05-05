@@ -11,7 +11,7 @@ int main() {
     }
 
     //precompute:
-    int hash[13] = {0};
+    int hash[13] = {0}; // max 10^6 size in main, if declared globally than 1e7
     for (int i = 0; i < n; i++) {
         hash[arr[i]] += 1;
     }
