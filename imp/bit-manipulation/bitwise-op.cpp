@@ -10,13 +10,13 @@ int main()
     cin >> b;
 
     // Bitwise operations
-    cout << "a & b = " << (a & b) << endl;
-    cout << "a | b = " << (a | b) << endl;
-    cout << "a ^ b = " << (a ^ b) << endl;
-    cout << "~a = " << (~a) << endl;
+    cout << "a & b = " << (a & b) << endl; // AND
+    cout << "a | b = " << (a | b) << endl; // OR
+    cout << "a ^ b = " << (a ^ b) << endl; // XOR
+    cout << "~a = " << (~a) << endl;       // NOT
 
-    //Left Shift & Right Shift
-    cout << (17 >> 1) << endl;
-    cout << (5 << 2) << endl;
+    // Left Shift & Right Shift Operators
+    cout << (17 >> 1) << endl; // same as dividing by 2
+    cout << (5 << 2) << endl;  // same as multiplying by 2
     return 0;
 }
