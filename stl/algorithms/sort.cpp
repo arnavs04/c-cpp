@@ -18,6 +18,7 @@ int main()
     be sorted*/
 
     sort(arr, arr + n);
+    sort(arr, arr + n, greater<int>); //greater<int> is a comparator function
  
     cout << "\nArray after sorting using "
             "default sort is : \n";
