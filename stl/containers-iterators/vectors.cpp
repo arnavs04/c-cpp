@@ -16,7 +16,7 @@ int main()
     vp.emplace_back(1, 2);
 
     vector<int> v1(5, 100); // 5 instances of 100
-    vector<int> v2(v1);
+    vector<int> v2(v1); // copy of v1
 
     vector<int>::iterator it = v.begin(); // v.end(), v.rend(), v.rbegin
 
