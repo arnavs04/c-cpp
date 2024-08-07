@@ -12,31 +12,25 @@ Below program uses [transform() in STL](https://www.geeksforgeeks.org/transform-
 
 CPP
 ---
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
 
-`#include <bits/stdc++.h>`
+int increment(int x) {return (x+1);}
 
-`using` `namespace` `std;`
+int main() {
+    int arr[] = {1, 2, 3, 4, 5};
 
-`int` `increment(``int` `x) {`  `return` `(x+1); }`
+    int n =sizeof(arr)/sizeof(arr[0]);
 
-`int` `main()`
+    transform(arr, arr+n, arr, increment);
 
-`{`
+    for (int i=0; i<n; i++)
+        cout << arr[i] <<" ";
 
-    `int` `arr[] = {1, 2, 3, 4, 5};`
-
-    `int` `n =` `sizeof``(arr)/``sizeof``(arr[0]);`
-
-    `transform(arr, arr+n, arr, increment);`
-
-    `for` `(``int` `i=0; i<n; i++)`
-
-        `cout << arr[i] <<" ";`
-
-    `return` `0;`
-
-`}`
-
+    return 0;
+}
+```
 Output:
 
 ```
@@ -67,49 +61,33 @@ Let’s delve deeper and understand how this can actually be used in conjunction
 
 CPP
 ---
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
 
-`#include <bits/stdc++.h>`
+class increment {
+private:
+    int num;
+public:
+    increment(int n) : num(n) {  }
+    int operator () (int arr_num) const {
 
-`using` `namespace` `std;`
+        return num + arr_num;
+    }
+};
 
-`class` `increment`
+int main() {
+    int arr[] = {1, 2, 3, 4, 5};
 
-`{`
+    int n =sizeof(arr)/sizeof(arr[0]);
+    int to_add = 5;
 
-`private``:`
+    transform(arr, arr+n, arr, increment(to_add));
 
-    `int` `num;`
-
-`public``:`
-
-    `increment(``int` `n) : num(n) {  }`
-
-    `int` `operator () (``int` `arr_num)` `const` `{`
-
-        `return` `num + arr_num;`
-
-    `}`
-
-`};`
-
-`int` `main()`
-
-`{`
-
-    `int` `arr[] = {1, 2, 3, 4, 5};`
-
-    `int` `n =` `sizeof``(arr)/``sizeof``(arr[0]);`
-
-    `int` `to_add = 5;`
-
-    `transform(arr, arr+n, arr, increment(to_add));`
-
-    `for` `(``int` `i=0; i<n; i++)`
-
-        `cout << arr[i] << " ";`
-
-`}`
-
+    for (int i=0; i<n; i++)
+        cout << arr[i] << " ";
+}
+```
 Output:
 
 ```
@@ -123,11 +101,14 @@ Output:
 
 Thus, here, Increment is a functor, a c++ class that acts as a function.
 
-```
 The line,
-transform(arr, arr+n, arr, increment(to_add));
 
+```cpp
+transform(arr, arr+n, arr, increment(to_add));
+```
 is the same as writing below two lines,
+
+```cpp
 // Creating object of increment
 increment obj(to_add); 
 

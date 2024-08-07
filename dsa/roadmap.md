@@ -1,11 +1,8 @@
 # DSA
 
-<br>
-<p align="center"><img src="https://i.ibb.co/hB0gQWq/dsa.png" height="200"></p>
-
 Data Structure is a way of collecting and organising data in such a way that we can perform operations on these data in an effective way. Data Structures is about rendering data elements in terms of some relationship, for better organization and storage. And algorithm is a set of steps used for accomplishing a particular task.
 
-## :pushpin: Topics to Cover for Data Structures :books:
+## Topics to Cover for Data Structures :books:
 
 |S.No.|Topic|Finished|
 |---|-------------|---------|
@@ -26,7 +23,7 @@ Data Structure is a way of collecting and organising data in such a way that we 
 |15.|n-ary Trees|<ul> <li> [ ] </li> </ul> |
 |16.|Multi dimensional Trees|<ul> <li> [ ] </li> </ul> |
 
-## :pushpin: Topics to Cover for Algorithms :books:
+## Topics to Cover for Algorithms :books:
 
 |S.No.|Topic|Finished|
 |---|-------------|---------|
@@ -60,7 +57,7 @@ Data Structure is a way of collecting and organising data in such a way that we 
 
 ***
 
-## :pushpin: Resources
+## Resources
 
 - [ ] :movie_camera: [MIT Course: Introduction to Algorithms (MIT OCW playlist-Youtube)](https://www.youtube.com/watch?v=HtSuA80QTyo&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb)
 - [ ] :movie_camera: [Mycodeschool: Data Structures (Youtube)](https://www.youtube.com/playlist?list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P)
@@ -78,7 +75,7 @@ Data Structure is a way of collecting and organising data in such a way that we 
 
 ***
 
-## :pushpin: Online Practice Platforms
+## Online Practice Platforms
 
 - [HackerRank](https://www.hackerrank.com/)
 - [HackerEarth](https://www.hackerearth.com/)
