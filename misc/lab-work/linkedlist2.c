@@ -9,12 +9,12 @@ struct node
     node next;
 };
 
-void insertAtHead(int value, node* head)
+void insertAtHead(int value, node* &head)
 {
     node newnode = (node)malloc(sizeof(node));
     newnode->data = value;
-    newnode->next = *head;
-    *head = newnode;
+    newnode->next = head;
+    head = newnode;
 }
 
 void insertAtTail(int value, node* head)

@@ -16,21 +16,19 @@ void PrintList(ListNode * head) // Function to print the LinkedList
 {
   ListNode * curr = head;
   for (; curr != NULL; curr = curr -> next)
-    cout << curr -> val << "-->";
+      cout << curr -> val << "-->";
   cout << "null" << endl;
 }
 
-ListNode * InsertatFirst(int value, ListNode * head) {
+void InsertatFirst(int value, ListNode* &head) {
+    // Step1: creating a new Node with the given value
+    ListNode * newnode = new ListNode(value);
 
-  // Step1 : creating a new Node with the given val
-  ListNode * newnode = new ListNode(value);
+    // Step2: Making next of newly created Node to point the head of LinkedList
+    newnode->next = head;
 
-  // Step2 : Making next of newly created Node to point the head of LinkedList
-  newnode -> next = head;
-
-  // Making the newly created Node as head
-  head = newnode;
-  return head;
+    // Making the newly created Node as head
+    head = newnode;
 }
 
 int main() {
