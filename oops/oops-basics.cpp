@@ -5,7 +5,7 @@ using namespace std;
 // check oops.py
 class employee {
 private:
-    string name;
+    static string name;
     string company;
     int age;
 
