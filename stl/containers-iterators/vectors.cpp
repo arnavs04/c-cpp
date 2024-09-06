@@ -47,6 +47,9 @@ int main()
 
      
     v1.insert(v1.begin(), copy.begin(), copy.end()); //
+    
+    int target = 5;
+    int cnt = count(v1.begin(), v1.end(), target);
 
     v.size();
     v.pop_back();
